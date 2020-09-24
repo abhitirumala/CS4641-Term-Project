@@ -1,15 +1,15 @@
-#### Natural Language Sarcasm Detection
+# Natural Language Sarcasm Detection
 
-### Summary Figure
+## Summary Figure
 
-### Introduction
+## Introduction
 
-### Methods
+## Methods
 
-### Results
+## Results
 
-### Discussion
+## Discussion
 
-### References
+## References
 
-### Touch-Point 1
+## Touch-Point 1
