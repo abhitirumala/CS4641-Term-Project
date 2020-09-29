@@ -34,6 +34,10 @@ Another way our model would be effective is in the field of NLP itself. A model 
 
 ## Touch-Point 1 Deliverables
 
-#### Project Proposal Video
+### Project Proposal Video
 
-#### Project Proposal Slide
+[https://bluejeans.com/s/tjvlm](https://bluejeans.com/s/tjvlm)
+
+### Project Proposal Slide
+
+[https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing](https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing)
