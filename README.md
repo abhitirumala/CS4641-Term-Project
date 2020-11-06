@@ -59,7 +59,7 @@ Based on the above graph, the optimal number of clusters seems to be between 10 
 
 After determining the optimal number of clusters, we drew a comparison between the unsupervised algorithm and the labeled data using the results from the K means algorithm for 15 clusters. For the clusters, there was no defining way to separate sarcastic comments from non-sarcastic comments using this implementation. Pictured below are some of the clusters where blue represents the non-sarcastic comments and orange represents the sarcastic comments. All of the clusters looked very similar to the images below.
 
-![](resources/pi_dist.png)
+![](resources/pie_dist.png)
 
 ## Summary of Unsupervised Learning Findings
 
