@@ -26,13 +26,13 @@ For our project, we primarily relied on the NLTK libraries which is commonly use
 
 The dataset that we performed our algorithms on was the reddit dataset from Kaggle that contained around 150,000 sarcastic and non-sarcastic comments. The dataset contained the following features for each comment: user ID, text of the comment, data, down, parent comment, score, top, date, topic, user name, and label. The labels are binary where 1's represent a sarcastic comment and 0's are not sarcastic.
 
-[Graph]
+![](resources/counts.png)
 
 The left bar of this graph shows the amount of non-sarcastic comments and the right bar shows the amount of sarcastic comments. The frequency of each in our dataset is roughly the same so the class distribution is not skewed.
 
 The features that we dropped from our dataset due to irrelevance were User ID, comment date, no. of downvotes, top, and the username. We also decided to see if there was a correlation between sarcastic comments and upvotes but it doesn’t appear to be that way according to this scatterplot. 
 
-[Graph]
+![](resources/score_dist.png)
 
 Therefore, we also dropped upvote score. This left our dataset with only text data.
 
@@ -53,13 +53,13 @@ In order to generate a vectorized representation of each comment in our dataset,
 
 The unsupervised learning algorithm that we used for this part of the project was the K means algorithm which attempts to find the optimal number of clusters that can be used to minimize the loss function which is defined as the summation of the distances between the centers and the other data points. We used the elbow method to determine the optimal number of clusters and used the Sci-kit Learn implementation of the K means algorithm. We generated the following graph after running K means with a max iteration of 1000 and up to 75 clusters.
 
-[Graph]
+![](resources/elbow_method.png)
 
 Based on the above graph, the optimal number of clusters seems to be between 10 and 20. We can estimate that it is 15.
 
 After determining the optimal number of clusters, we drew a comparison between the unsupervised algorithm and the labeled data using the results from the K means algorithm for 15 clusters. For the clusters, there was no defining way to separate sarcastic comments from non-sarcastic comments using this implementation. Pictured below are some of the clusters where blue represents the non-sarcastic comments and orange represents the sarcastic comments. All of the clusters looked very similar to the images below.
 
-[Graphs]
+![](resources/pi_dist.png)
 
 ## Summary of Unsupervised Learning Findings
 
