@@ -83,7 +83,7 @@ Another way our model would be effective is in the field of NLP itself. A model 
 - [https://www.aclweb.org/anthology/C14-1022.pdf](https://www.aclweb.org/anthology/C14-1022.pdf)
 - [http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.800.4972&rep=rep1&type=pdf](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.800.4972&rep=rep1&type=pdf)
 
-# Touch-Point 1 Deliverables
+## Touch-Point 1 Deliverables
 
 ### Project Proposal Video
 
@@ -92,3 +92,17 @@ Another way our model would be effective is in the field of NLP itself. A model 
 ### Project Proposal Slide
 
 [https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing](https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing)
+
+## Touch-Point 2 Deliverables
+
+### Video Summary
+
+[https://bluejeans.com/s/3_3kj](https://bluejeans.com/s/3_3kj)
+
+### Video Slide
+
+[https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing](https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing)
+
+### Code
+
+[https://colab.research.google.com/drive/1nD-kY1FXvnYkyHTDvD61d7N5h5w7lk1Z?usp=sharing](https://colab.research.google.com/drive/1nD-kY1FXvnYkyHTDvD61d7N5h5w7lk1Z?usp=sharing)
