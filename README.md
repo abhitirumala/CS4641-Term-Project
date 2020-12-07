@@ -65,23 +65,55 @@ After determining the optimal number of clusters, we drew a comparison between t
 
 The K means algorithm did not prove to be an effective method for sarcasm detection as the clusters that we seemed to generate after determining the optimal number of clusters did not seem to organize the comments decisively. Intuitively, the reason for this would be a result of our text preprocessing algorithm. The points similarity does not indicate anything when using Euclidean distance between them but only when put through the cosine similarity function. Instead of using linear distance as the metric for determining loss in the K means algorithm, we could use the cosine function instead. This would be an area for us to look into over the following few weeks and may be more informative than the standard K means algorithm.
 
-# Results
+# Supervised Learning with Logistic Regression
 
-Our team hopes to generate a model that would be able to accurately classify comments as sarcastic given some degree of context. In a limited sense, this would allow us to see the number of tweets and reddit comments that are sarcastic. More generally though, our results could be very informative for the field of sentiment analysis and natural language processing. 
+## Text/Data Preprocessing
+
+For the supervised learning portion of the assignment, we used the same preprocessing that we did for the unsupervised portion. To reiterate, we pulled our data from a GitHub link where we had stored the dataset and put it in a data frame, dropped the unnecessary or uncorrelated features, got rid of punctuation and stop words, and used the Doc2Vec model to vectorize comments. Because this is a supervised learning approach, we also split up our data into a training and testing set. 80% of the comments (12,000) went towards the training data and the other 20% went towards the test data.
+
+## Model Architecture
+
+After testing between a variety of supervised learning methods, the model that had the highest accuracy rate used logistic regression to classify the comments. Each comment and parent comment are represented as a vector for different n-grams (short phrases of words) found in the text data.
+In order to perform logistic regression, we wanted to measure how important each word was to the overall meaning of the sentence for greater accuracy. We decided to use TF-IDF vectorization on the preprocessed input which stands for term-frequency inverse document frequency. Term frequency calculates the amount of times a word appears in a given document but would undoubtedly give weight to meaningless words like “the” or “a.” To offset for this, it is multiplied by inverse document frequency which measures how much information the word provides to the meaning of the document. TF-IDF is one of the most common term weighting systems used in NLP. 
+The pipeline we used was as follows: 
+
+1.	Preprocessed Input
+2.	TF-IDF Vectorization
+3.	Logistic Regression on the concatenated input of the parent and original comment
+4.	Output: 0 for not sarcastic and 1 for sarcastic
+
+Here is a visualization of the pipeline:
+
+![](resources/pipeline.png)
+
+# Results and Analysis
+
+In order to visualize the results of our model, we used the ELI5 library to picture the classification process by the model. Below is a table containing the weight of each n-gram received after training. In other words, it indicates which words are more likely to be used in sarcastic comments. Certain words like “yeah” or “!” were found to be very indicative of sarcasm.
+
+![](resources/model_weights.png)
+
+Additionally, we also have a confusion matrix displaying the accuracy of the model and the rate of false positives and negatives:
+
+![](resources/confusion_matrix.png)
+
+Our model was able to predict whether or not a comment was sarcastic roughly 70% of the time. We determined that this was successful because it was significantly greater than random chance. Additionally, a lot of humans themselves struggle on picking up sarcasm all the time, so 70% seems to be a very realistic ballpark for a successful model.
+
+The last action item we took was testing our own sarcastic comments on the model we generated. One of the tests we performed was giving the model the sentence “Russell Wilson is the undisputed MVP in the NFL” which we labeled as sarcastic because in the best case it is between him and Patrick Mahomes. The parent comment we gave was “The Seahawks are 7-3 with Wilson as the QB.” The model correctly predicted that it was a sarcastic comment to our own amusement but if we switched out the name for another NFL quarterback, it was determined to be not sarcastic. This is an example of what testing a comment would look like. 
+
+![](resources/model_example.png)
 
 # Discussion
 
-After our model is finished, we would ideally like to test it on a variety of different data sets so we can determine its accuracy. This would help us determine if it is overfit to the data that we have. The methods that we have outlined for how we would perform testing for our model lead us to believe that if it is overfit, it would be a fault of the algorithm due to the nature of the way that we are running tests. 
+Through our analysis using Logistic Regression, more than being able to develop a model that can accurately predict sarcasm using context clues, we were able to analyze comments to find what terms and bigrams offer the most insight into whether a comment is sarcastic or not. We can compare these findings to our intuitive understanding of use cases of sarcasm, As we see in the charts, our model was correctly able to determine that usages of certain terms in text can lead to a higher sarcasm rate, which means that we can use this understanding to judge a comment by scoring it using each terms weight.
 
-One of the ways we would like to use our model is to do an analysis of the tweets done by a variety of famous figures. Political figures, athletes, movie stars, etc. are all followed on twitter and a sarcasm model run on their tweets would be important to determine how seriously they should be taken. In some cases, it could even be a measure of how appropriately they handle their position. 
-
-Another way our model would be effective is in the field of NLP itself. A model that is able to understand context dependent speech would be useful for chatbots or other interactive, intelligent models. We see these becoming more and more relevant as technology progresses towards devices that contain Siri, Alexa, etc. Our methodology could be used to train and progress a variety of speech based, conversational bots.
+This research is likely very useful in more complex Natural Language Processing scenarios, as now we can use our insight to not only assist those in determining the truthfulness of statements, but to also help teach bots what to look for in human speech in order to best respond to it. Using this sarcasm detection in tandem with other sentiment analysis tools and models will advance our research and development of natural language processing tools.
 
 # References
 
 - [https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/reports/custom/15791781.pdf](https://web.stanford.edu/class/archive/cs/cs224n/cs224n.1194/reports/custom/15791781.pdf)
 - [https://www.aclweb.org/anthology/C14-1022.pdf](https://www.aclweb.org/anthology/C14-1022.pdf)
 - [http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.800.4972&rep=rep1&type=pdf](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.800.4972&rep=rep1&type=pdf)
+- [https://www.kaggle.com/yantiz/a4-demo-sarcasm-detection-with-logit](https://www.kaggle.com/yantiz/a4-demo-sarcasm-detection-with-logit)
 
 # Touch-Point 1 Deliverables
 
@@ -95,4 +127,12 @@ Video Summary: [https://bluejeans.com/s/3_3kj](https://bluejeans.com/s/3_3kj)
 
 Video Slide: [https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing](https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing)
 
-Colab Notebook: [https://colab.research.google.com/drive/1nD-kY1FXvnYkyHTDvD61d7N5h5w7lk1Z?usp=sharing](https://colab.research.google.com/drive/1nD-kY1FXvnYkyHTDvD61d7N5h5w7lk1Z?usp=sharing)
+Colab Notebook: [https://colab.research.google.com/drive/1nD-kY1FXvnYkyHTDvD61d7N5h5w7lk1Z?usp=sharing](src/notebooks/sarcasm_unsupervised.ipynb)
+
+# Touch-Point 3 Deliverables
+
+Video Summary: [https://bluejeans.com/s/Emez0QInFV8](https://bluejeans.com/s/Emez0QInFV8)
+
+Video Slide: [https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing](https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing)
+
+Colab Notebook: [https://colab.research.google.com/drive/1nD-kY1FXvnYkyHTDvD61d7N5h5w7lk1Z?usp=sharing](src/notebooks/sarcasm_supervised.ipynb)
