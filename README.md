@@ -127,7 +127,7 @@ Video Summary: [https://bluejeans.com/s/3_3kj](https://bluejeans.com/s/3_3kj)
 
 Video Slide: [https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing](https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing)
 
-Colab Notebook: [https://colab.research.google.com/drive/1nD-kY1FXvnYkyHTDvD61d7N5h5w7lk1Z?usp=sharing](src/notebooks/sarcasm_unsupervised.ipynb)
+Colab Notebook: [sarcasm_unsupervised.ipynb](src/notebooks/sarcasm_unsupervised.ipynb)
 
 # Touch-Point 3 Deliverables
 
@@ -135,4 +135,4 @@ Video Summary: [https://bluejeans.com/s/Emez0QInFV8](https://bluejeans.com/s/Eme
 
 Video Slide: [https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing](https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing)
 
-Colab Notebook: [https://colab.research.google.com/drive/1nD-kY1FXvnYkyHTDvD61d7N5h5w7lk1Z?usp=sharing](src/notebooks/sarcasm_supervised.ipynb)
+Colab Notebook: [sarcasm_supervised.ipynb](src/notebooks/sarcasm_supervised.ipynb)
