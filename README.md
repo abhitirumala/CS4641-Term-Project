@@ -119,13 +119,13 @@ This research is likely very useful in more complex Natural Language Processing 
 
 Project Proposal Video: [https://bluejeans.com/s/tjvlm](https://bluejeans.com/s/tjvlm)
 
-Project Proposal Slide: [https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing](https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing)
+Project Proposal Slide (Slide 1): [https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing](https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing)
 
 # Touch-Point 2 Deliverables
 
 Video Summary: [https://bluejeans.com/s/3_3kj](https://bluejeans.com/s/3_3kj)
 
-Video Slide: [https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing](https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing)
+Video Slide (Slide 2): [https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing](https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing)
 
 Colab Notebook: [sarcasm_unsupervised.ipynb](src/notebooks/sarcasm_unsupervised.ipynb)
 
@@ -133,6 +133,6 @@ Colab Notebook: [sarcasm_unsupervised.ipynb](src/notebooks/sarcasm_unsupervised.
 
 Video Summary: [https://bluejeans.com/s/Emez0QInFV8](https://bluejeans.com/s/Emez0QInFV8)
 
-Video Slide: [https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing](https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing)
+Video Slide (Slide 3): [https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing](https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing)
 
 Colab Notebook: [sarcasm_supervised.ipynb](src/notebooks/sarcasm_supervised.ipynb)
