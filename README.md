@@ -53,7 +53,7 @@ In order to generate a vectorized representation of each comment in our dataset,
 
 The unsupervised learning algorithm that we used for this part of the project was the K means algorithm which attempts to find the optimal number of clusters that can be used to minimize the loss function which is defined as the summation of the distances between the centers and the other data points. We used the elbow method to determine the optimal number of clusters and used the Sci-kit Learn implementation of the K means algorithm. We generated the following graph after running K means with a max iteration of 1000 and up to 75 clusters.
 
-![](resources/elbow_method.png)
+![](resources/elbow2.png)
 
 Based on the above graph, the optimal number of clusters seems to be between 10 and 20. We can estimate that it is 15.
 
