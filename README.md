@@ -133,6 +133,8 @@ Colab Notebook: [sarcasm_unsupervised.ipynb](src/notebooks/sarcasm_unsupervised.
 
 Video Summary: [https://bluejeans.com/s/Emez0QInFV8](https://bluejeans.com/s/Emez0QInFV8)
 
+Final Project Presentation: [https://bluejeans.com/s/ha8RB7CtAWq/](https://bluejeans.com/s/ha8RB7CtAWq/)
+
 Video Slide (Slide 3): [https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing](https://docs.google.com/presentation/d/1DiOc0nDUfCwI1mvO6MIp_5j9UZTssN1W7Jh6VkHPBsA/edit?usp=sharing)
 
 Colab Notebook: [sarcasm_supervised.ipynb](src/notebooks/sarcasm_supervised.ipynb)
